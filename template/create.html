@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un Jeu de Données - AcadémiQ</title>
+    <link rel="icon" href="static/LogoAcademiQ.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Créer un Nouveau Jeu de Données</h1>
+        <p>Définis un nom et ajoute une image pour personnaliser ton jeu de données.</p>
+    </header>
+
+    <main>
+        <form class="dataset-form" action="/create" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="dataset-name">Nom du jeu de données <span class="required">*</span></label>
+                <input type="text" id="dataset-name" name="dataset-name" placeholder="Entrez le nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dataset-image">Télécharger une image (optionnel)</label>
+                <input type="file" id="dataset-image" name="dataset-image" accept="image/*">
+            </div>
+
+            <button type="submit" class="create-button">Créer</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2024 AcadémiQ. Tous droits réservés.
+    </footer>
+</body>
+</html>

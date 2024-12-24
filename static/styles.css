@@ -1,0 +1,115 @@
+/* Styles communs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f7f9fc, #deeaf6);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2a4d69;
+    margin-bottom: 17px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #7a869a;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #7a869a;
+}
+
+.load-data {
+    background-color: #2a4d69;
+    color: #fff;
+}
+
+.load-data:hover {
+    background-color: #1e374e;
+}
+
+.create-data {
+    background-color: #f4a261;
+    color: #fff;
+}
+
+.create-data:hover {
+    background-color: #d78b4c;
+}
+
+/* Styles spécifiques */
+.dataset-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.dataset-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.dataset-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2a4d69;
+}
+
+.dataset-form input[type=\"text\"],
+.dataset-form input[type=\"file\"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dataset-form input[type=\"text\"]:focus,
+.dataset-form input[type=\"file\"]:focus {
+    border-color: #2a4d69;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 77, 105, 0.5);
+}
+
+.create-button {
+    background-color: #f4a261;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.create-button:hover {
+    background-color: #d78b4c;
+}
